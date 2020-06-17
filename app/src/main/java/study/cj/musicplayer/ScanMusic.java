@@ -16,12 +16,10 @@ public class ScanMusic {
         Cursor c=mContext.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, null, null,null);
         if(c!=null)
         {
-
             //创建Model对象
             Model model;
             //循环读取
             //实例化Model对象
-
             while(c.moveToNext()){
 
                 model = new Model();
@@ -40,10 +38,8 @@ public class ScanMusic {
             }
             //打印出数组的长度
             System.out.println(arrayList.size());
-
         }
         //得到一个数组的返回值
         return arrayList;
-
     }
 }
